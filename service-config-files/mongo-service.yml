@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: mongo-service
+spec:
+  selector:
+    app: mongo-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetport: 27017
